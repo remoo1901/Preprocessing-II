@@ -1,3 +1,24 @@
+.btn-styling {
+  background-color: #117b96;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.8em;
+  border-radius: 20px;
+  width: 210px;
+}
+.mobile-styling {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 3px;
+  font-size: 10px;
+}
+.direction {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -156,7 +177,7 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 10px;
 }
 img {
@@ -172,20 +193,46 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 30px;
-  border-bottom: 2px dotted lightgray;
+}
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1px;
+  }
 }
 .navigation a {
-  margin-bottom: 30px;
-  margin: 20px;
+  margin-bottom: 10px;
+  margin: 15px;
   text-align: center;
   color: black;
   font-size: 1.5rem;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .navigation a {
+    align-items: center;
+    margin-bottom: 1px;
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 25px;
+  }
+}
 .bus {
   margin-top: -10px;
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .bus {
+    margin-bottom: 15px;
+  }
+}
+hr {
+  border-top: 2px dashed silver;
+  width: 100%;
+  margin-right: 800px;
 }
 .footer {
   width: 100%;
@@ -204,28 +251,77 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3px;
+    font-size: 10px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  font-size: 11px;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3px;
+    font-size: 10px;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed silver;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3px;
+    font-size: 10px;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -236,11 +332,44 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed silver;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn {
+  background-color: #117b96;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.8em;
+  border-radius: 20px;
+  width: 210px;
+}
+.home .first-content > p {
+  border-bottom: 2px dashed silver;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.home h2 {
+  margin-left: 3px;
 }
